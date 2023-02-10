@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 
 public class Calculator {
+    //Calculator описывает логику составления спис
     //поля
     ArrayList<String> fullList = new ArrayList<>();
     double sum;
-
+    double share;
+    String rub;
 
     //методы
     void addToList(Product product) {
@@ -20,17 +22,8 @@ public class Calculator {
     }
 
     public void shareSum(Counter counter) {
-        double share = sum / counter.guests;
-        String rub = null;
-        int y = (int) (share % 10);
-        if (y == 0 || y > 4) {
-            rub = "рублей";
-        }
-        if (y > 1) {
-            rub = "рубля";
-        }
-
-            String finalMessage = String.format("С каждого гостя %.2f %s.Оплата карточкой?", share, rub);
-            System.out.println(finalMessage);
+        share = sum / counter.guests;
     }
 }
+
+

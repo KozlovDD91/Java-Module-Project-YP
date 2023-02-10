@@ -1,6 +1,4 @@
 // dev branch for Y.Practicum
-import java.util.Scanner;
-
 
 public class Main {
 
@@ -10,9 +8,11 @@ public class Main {
         Counter counter = new Counter();
         Survey survey = new Survey();
         Product product = new Product();
+        Declension declension = new Declension();
         counter.startCounter();
-        survey.surveyCustomer(product,calculator);
+        survey.surveyCustomer(product, calculator);
         calculator.shareSum(counter);
+        declension.showResult(calculator);
 
 
     }
