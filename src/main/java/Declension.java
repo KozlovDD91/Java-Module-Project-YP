@@ -1,4 +1,5 @@
 public class Declension {
+    //Склонялка + вывод результата
     public String toIncline(Calculator calculator) {
         int preLastDigit = (int) Math.floor(calculator.share) % 100 / 10;
 

@@ -1,12 +1,11 @@
 import java.util.ArrayList;
 
 public class Calculator {
-    //Calculator описывает логику составления спис
+    //Calculator описывает логику записи покупок и их стоимости
     //поля
     ArrayList<String> fullList = new ArrayList<>();
     double sum;
     double share;
-    String rub;
 
     //методы
     void addToList(Product product) {

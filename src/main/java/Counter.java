@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class Counter {
+    // Записывет количество гостей. Проверка значений.
     Scanner scanner = new Scanner(System.in);
     //поле
     int guests;
